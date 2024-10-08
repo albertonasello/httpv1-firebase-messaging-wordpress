@@ -34,6 +34,7 @@
      device_name?: string;
      os_version?: string;
    }
+   ```
 
 4. Handle incoming messages and notifications in your app.
 5. To unsubscribe, send a request to `/wp-json/fcm/v1/unsubscribe`.
