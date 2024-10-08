@@ -22,6 +22,19 @@
 1. Install the `@react-native-firebase/messaging` package.
 2. Configure Firebase in your React Native app.
 3. Implement code to register the device token and send it to the WordPress REST API endpoint `/wp-json/fcm/v1/subscribe`.
+
+ ```typescript
+   interface FcmToken {
+     device_uuid: string;
+     device_token: string;
+     other_data?: any;
+     rest_api_key?: string;
+     topic?: string;
+     device_type?: string;
+     device_name?: string;
+     os_version?: string;
+   }
+
 4. Handle incoming messages and notifications in your app.
 5. To unsubscribe, send a request to `/wp-json/fcm/v1/unsubscribe`.
 
